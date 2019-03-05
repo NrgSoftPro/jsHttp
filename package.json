@@ -1,0 +1,19 @@
+{
+  "name": "@nrg/http",
+  "version": "1.0.0-beta.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NrgSoftPro/jsHttp.git"
+  },
+  "author": "NrgSoft",
+  "license": "MIT",
+  "description": "@nrg/http",
+  "bugs": {
+    "url": "https://github.com/NrgSoftPro/jsHttp/issues"
+  },
+  "homepage": "https://github.com/NrgSoftPro/jsHttp",
+  "dependencies": {
+    "@nrg/core": "^1.0.0-beta.1"
+  }
+}
