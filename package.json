@@ -1,6 +1,6 @@
 {
   "name": "@nrg/http",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/NrgSoftPro/jsHttp",
   "dependencies": {
-    "@nrg/core": "^1.0.0-beta.1"
+    "@nrg/core": "^1.0.0-beta.2"
   }
 }
