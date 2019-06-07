@@ -47,6 +47,9 @@ module.exports = class extends Component {
       }
 
       const body = new FormData()
+      for (const [key, value] of Object.entries(this.bodyParams || {})) {
+        body.append(key, value)
+      }
       body.append('file', file)
 
       this.http.send(body)

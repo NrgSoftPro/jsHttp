@@ -47,6 +47,11 @@ module.exports = class extends Value {
     }
 
     const response = await fetch(url, options)
+
+    if (204 === response.status) {
+      return null
+    }
+
     const json = await response.json()
 
     if (response.ok) {
@@ -67,10 +72,11 @@ module.exports = class extends Value {
     }
   }
 
-  createFileUploader (route, queryParams = {}, request = {}) {
+  createFileUploader (route, queryParams = {}, bodyParams = {}, request = {}) {
     return this.injector.createObject(Uploader, {
       url: this.createUrl(route, queryParams),
-      headers: {...this.headers(), ...request.headers || {}}
+      headers: {...this.headers(), ...request.headers || {}},
+      bodyParams
     })
   }
 
